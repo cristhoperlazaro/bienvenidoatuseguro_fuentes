@@ -1,0 +1,164 @@
+<div style="width:100%;height:300px;
+background-color: #009dd6;
+position:absolute;margin-top: -39px;">
+    <div
+        style="width:100%;height:40px;background-color: rgba(0,0,0,0.1);margin-top: 39px;color: white;padding-top: 5px">
+        <div style="margin-left: 17.8%;">
+            <span routerLink="/inicio" class="crumbModulo">Inicio > </span>
+            <span routerLink="/salud-financiera" class="crumbModulo">Salud financiera > </span>
+            <span routerLink="/salud-financiera-servicio" class="crumbModulo"><b>Servicio</b></span>
+        </div>
+    </div>
+    <h1 class="tituloModulo pad-tit">Salud Financiera</h1>
+</div>
+<div class="content" style="padding-top: 130px;background-color: #f6f8fa">
+    <div class="mt-5">
+        <section class="col-8 offset-2 accordionPerfil pb-5 sectionVTS">
+            <section class="cardsPerfil mb-5">
+                <div class="card mb-3" style="border:1px solid lightgray !important;padding:6%">
+<div class="row" >
+    <div class="container mb-3">
+        <a routerLink="/salud-financiera-ejercicios" class="btn-volver manito Volver" role="button" style="color: #008ACC;"><i
+                class="fas fa-chevron-circle-left"></i> Volver</a>
+      </div>
+
+      <p class="text-center col-lg-12 mt-3 mb-4 font-weight-bold"> Mide la inclinación a
+        ayudar
+        económicamente a otros que necesitan ayuda o a apoyar causas sociales.</p>
+    <div class="col-lg-8 offset-lg-2 offset-md-0 col-md-12">
+        <div class="form-group">
+            <label>
+                ¿Durante los últimos 12 meses has donado o regalado dinero a otra persona o
+                causa social?
+            </label>
+            <div class="form-group form-check">
+                <input type="radio" name="s10s1p1" class="form-check-input mt-3" id="test10radio1_1"
+                    value="Si, 1 o 2 veces para ayudar en una catástrofe o desastre">
+                <label class="form-check-label mt-2" for="test10radio1_1">Si, 1 o 2 veces
+                    para
+                    ayudar en una catástrofe o desastre</label>
+                <br>
+                <input type="radio" name="s10s1p1" class="form-check-input mt-3" id="test10radio1_2"
+                    value="Si, 1 o 2 veces para apoyar una causa social ó religiosa diferente a un desastre o catástrofe">
+                <label class="form-check-label mt-2" for="test10radio1_2">Si, 1 o 2 veces
+                    para
+                    apoyar una causa social ó religiosa diferente a un desastre o
+                    catástrofe</label>
+                <br>
+                <input type="radio" name="s10s1p1" class="form-check-input mt-3" id="test10radio1_3"
+                    value="Sí, mensualmente a una causa social ó religiosa diferente a un desastre o catástrofe">
+                <label class="form-check-label mt-2" for="test10radio1_3">Sí, mensualmente a
+                    una
+                    causa social ó religiosa diferente a un desastre o catástrofe</label>
+                <br>
+                <input type="radio" name="s10s1p1" class="form-check-input mt-3" id="test10radio1_4" value="No">
+                <label class="form-check-label mt-2" for="test10radio1_4">No</label>
+                <br>
+                <input type="radio" name="s10s1p1" class="form-check-input mt-3" id="test10radio1_5"
+                    value="Si, 1 o 2 veces para ayudar a un amigo o familiar">
+                <label class="form-check-label mt-2" for="test10radio1_5">Si, 1 o 2 veces
+                    para
+                    ayudar a un amigo o familiar</label>
+                <br>
+                <input type="radio" name="s10s1p1" class="form-check-input mt-3" id="test10radio1_6"
+                    value="Si, mensualmente a un familiar o amigo en necesidad">
+                <label class="form-check-label mt-2" for="test10radio1_6">Si, mensualmente a
+                    un
+                    familiar o amigo en necesidad</label>
+
+            </div>
+        </div>
+    </div>
+<!--
+      <h2 class="titleTest col-lg-10 offset-lg-1 mt-3 mb-4 "> Evalúa tu salud financiera</h2>
+
+    <p class="text col-lg-12 mt-3 mb-4 font-weight-bold"> 
+
+        <label>  Selecciona el área que más te interese, reponde las preguntas y obtén tu puntaje correspondiente. Para obtener tu score total debes completar todo el cuestionario.</label><br><br>
+ 
+        <label style="color: red;"> Ayudando a otros</label>.</p>
+    <div class="col-lg-8 offset-lg-2 offset-md-0 col-md-12">
+        <div class="form-group">
+            <label>¿Durante los últimos 12 meses has donado o regalado dinero a otra persona o causa social?</label>
+                   <select class="form-control mt-2" [(ngModel)]="respuestas3.campo_1_2">
+                <option value="">Selecciona tu respuesta* </option>
+              
+            </select>
+        </div>
+    </div>
+    <br><br>
+
+
+    <p class="text col-lg-12 mt-3 mb-4 font-weight-bold"> <label>  </label><br><br>
+
+        <label style="color: red;"> Conocimiento en finanzas personales</label></p>
+    <div class="col-lg-8 offset-lg-2 offset-md-0 col-md-12">
+        <div class="form-group">
+            <label>Imagínate que 5 hermanos reciben un regalo de S/ 1,000. Si los hermanos tienen que compartir el dinero por igual, ¿cuánto recibe cada uno?</label>
+            <textarea style="width: 500px ; height: 100px;"> </textarea> 
+            <br><br>
+ 
+
+            <label>Ahora imagínate que los hermanos tienen que esperar un año para obtener su parte de los S/ 1,000 y la inflación se mantiene en cinco por ciento (5%) anual. Luego de un año, ¿ellos van a poder comprar?</label>
+                   <select class="form-control mt-2" [(ngModel)]="respuestas4.campo_1_2">
+                <option value="">Selecciona tu respuesta* </option>
+              
+            </select>
+            <br><br>
+
+
+            <label>Imaginate que tú le prestaste S/ 185.62 a un amigo una noche y él te devolvió  S/ 200 al día siguiente. ¿Tu amigo pagó algún interés por este préstamo?</label>
+            <select class="form-control mt-2" [(ngModel)]="respuestas5.campo_1_2">
+         <option value="">Selecciona tu respuesta* </option>
+        
+     </select>
+
+     <br><br>
+
+    
+     <label>Supongamos que tú pones  S/  100 en una cuenta de ahorros con una tasa de interés de dos por ciento (2%) por año. tú no realizas ningún otro abono en esta cuenta y no retiras dinero. ¿Cuánto habría en la cuenta al final del primer año, una vez que se realizó el pago de intereses?</label>
+     <textarea style="width: 500px ; height: 100px;"> </textarea>  
+
+     <label>¿Y con la misma tasa de interés de dos por ciento (2%) por año, cuánto tendría la cuenta al final de 5 años? Sería…  </label>
+     <select class="form-control mt-2" [(ngModel)]="respuestas6.campo_1_2">
+  <option value="">Selecciona tu respuesta* </option>
+  
+</select>
+
+<br><br>
+<label>Indica para cada afirmación si consideras si es verdadera o falsa </label>
+
+<label>1. Cuando se invierte mucho dinero, también existe la posibilidad de que se pierda mucho dinero </label>
+<select class="form-control mt-2" [(ngModel)]="respuestas7.campo_1_2">
+<option value="">Selecciona tu respuesta* </option>
+
+</select>
+
+
+<label>2. Una alta inflación significa que el costo de vida está aumentando rápidamente </label>
+<select class="form-control mt-2" [(ngModel)]="respuestas8.campo_1_2">
+<option value="">Selecciona tu respuesta* </option>
+
+</select>
+
+
+<label>3. Es menos probable que usted pierda todo su dinero si lo invierte en más de un lugar </label>
+<select class="form-control mt-2" [(ngModel)]="respuestas9.campo_1_2">
+<option value="">Selecciona tu respuesta* </option>
+
+</select>
+
+
+    </div>
+    </div>
+-->
+    <div class="text-center" style="width:100%">
+        <button style="margin: auto" type="submit" (click)="guardarIndicadores10()" routerLink="/salud-financiera-ejercicios"
+            class="btn btnTop2 btn-primary mt-4 mb-4">Finalizar cuestionario</button>
+    </div>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>

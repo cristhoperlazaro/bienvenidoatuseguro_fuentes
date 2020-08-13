@@ -1,0 +1,180 @@
+<app-block-loader [blocked]="loader"></app-block-loader>
+<div>
+    <div class="d-block d-xl-none d-lg-none imgMovil" style="width:100%;height:325px;
+            margin-top: -39px;">
+        <div
+            style="width:100%;height:40px;background-color: rgba(0,0,0,0.1);margin-top: 39px;color: white;padding-top: 5px">
+            <div style="margin-left: 19.1%;">
+                <span routerLink="/inicio" class="crumbModulo">Inicio > </span>
+                <span routerLink="/score-credito" class="crumbModulo"><b>Tu score financiero</b></span>
+            </div>
+        </div>
+        <h1 class="tituloModulo">
+            Conoce tu score financiero
+            y administra tus finanzas </h1>
+
+            <button *ngIf="login.isActive()" class="btnGreen" style="margin-top: 80px; margin-left:10%;
+            width: 251px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #ffffff;" 
+            routerLink="/servicio-score-credito">Únete ahora
+        </button>
+    </div>
+    <div  class="d-none d-lg-block" style="width:100%;height:499px;
+            background-image: url('assets/img/fraude2/score/score-woman.png'), linear-gradient(90deg, #068468 50%,  #84d8c6 50%);
+            background-position: right 350px bottom, right bottom;
+            background-repeat: no-repeat,no-repeat;
+            margin-top: -39px;
+            background-size: 292px 396px, contain;">
+        <div
+            style="width:100%;height:40px;background-color: rgba(0,0,0,0.1);margin-top: 39px;color: white;padding-top: 5px;">
+            <div style="margin-left: 19.1%;">
+                <span routerLink="/inicio" class="crumbModulo">Inicio > </span>
+                <span routerLink="/score-credito" class="crumbModulo"><b>Tu score financiero</b></span>
+            </div>
+        </div>
+        <h1 class="tituloModulo"style="margin-top: 5%;">Conoce tu score financiero <br>
+            y administra tus finanzas </h1>
+        <button *ngIf="login.isActive()" class="btnGreen" style="margin-top: 55px; margin-left:10%;"
+            routerLink="/servicio-score-credito">Comienza ahora
+        </button>
+        <button *ngIf="!login.isActive()" class="btnGreen" style="margin-top: 55px; margin-left:10%;"
+            (click)="login.goLogin()">Únete ahora
+        </button>
+    </div>
+    <div class="container">
+        <div class="row m-4">
+            <div class="col-lg-8 col-md-10 offset-lg-2 offset-md-1 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-sm-0"></div>
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <h2 class="font-weight-bold text-secondary text-left mt-5 mb-5">
+                            Tu score financiero determina tu futuro.
+                        </h2>
+                        <div class="col-md-12 text-left">
+                        <p> Al conocer cuál es tu puntaje dentro del sistema financiero, podrás tener mejores
+                            oportunidades para seguir creciendo.</p>
+
+                        <p> Midiendo tu score financiero, tendrás control sobre todos los aspectos de tu vida. Sabrás
+                            cuáles son tus expectativas dentro del mercado crediticio y bancario. Accederás a ofertas,
+                            créditos y otros beneficios que tienes, al saber de qué manera proyectarte.</p>
+
+                        <p>Aprende a usar tu servicio de score financiero para conocer tus límites y cumplir todas las
+                            expectativas que tengas en tu horizonte de bienestar. </p>
+
+                        <p>El ecosistema de servicios de tu Seguro Tarjeta Protegida, te permite conocer tu score
+                            financiero con exactitud, sin ningún costo adicional y las veces que lo consideres
+                            necesario.</p>
+                            <p> Disfruta de tus beneficios con tu ecosistema de servicios en tres simples pasos:</p>
+                            
+                        </div>
+                        <div style="width:100%;border-top: 1px solid lightgray;border-bottom: 1px solid lightgray;"
+                        >
+                           <table border="0" class="tablaHomePasos mb-5">
+                               <tr>
+                                   <td>
+                                       <div class="circuloNumero">1</div>
+                                   </td>
+                                   <td>
+                                       <p class="tituloHomePasos">Verifica que estás activo</p>
+                                       <p>Activa tu seguro para poder empezar a disfrutar de tus beneficios del ecosistema.</p>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                       <div class="circuloNumero">2</div>
+                                   </td>
+                                   <td>
+                                       <p class="tituloHomePasos">Regístrate en nuestro sitio</p>
+                                       <p>Ingresa a nuestro sitio y completa los datos necesarios para poder disfrutar de los beneficios del ecosistema Scotiabank Cardif.</p>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                       <div class="circuloNumero">3</div>
+                                   </td>
+                                   <td>
+                                       <p class="tituloHomePasos">Empieza a disfrutar de tus beneficios</p>
+                                       <p>Ahora que tienes activo tu seguro, disfruta de todos los beneficios del ecosistema de servicios que tenemos para ti.
+                                          </p>
+                                   </td>
+                               </tr>
+                           </table></div>
+                        <div class="col-md-12 text-center">
+                            <p>Conoce cómo administrar tu futuro financiero ahora</p>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <!-- <div style="width:100%;" class="text-center">
+                    <iframe width="100%" height="555" src="https://www.youtube.com/embed/8DLXF7pmEWo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div> -->
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="col-lg-2 col-md-1 col-sm-0"></div>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-sm-0"></div>
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <!-- <p>Por medio de este puntaje los bancos calculan cuál es la probabilidad de cumplimiento de tus
+                            pagos y de acuerdo a esto deciden si te dan acceso a sus productos financieros.​</p>
+                        <p>En este servicio podrás conocer cuál es tu posición de riesgo para las entidades financieras
+                            y que
+                            puedes hacer para mejorar tu capacidad de pago. ​</p> -->
+                      
+                           <!-- <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> -->
+            
+                    <!-- <div class="col-2"></div>
+                    <div class="col-md-12 text-center">
+                        <p>Queremos acompañarte para que te acerques a tus sueños</p>
+                    </div> -->
+                    <div class="col-md-12 text-center mt-3 mb-5">
+                        <button *ngIf="!login.isActive()" class="btnMain" (click)="login.goLogin()">Comienza ahora
+                        </button>
+                        <button *ngIf="login.isActive()" class="btnMain" routerLink="/servicio-score-credito">Comienza
+                            ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-interest-material tipoMateriales="fr_credit"></app-interest-material>
+    <div class="container d-block d-xl-none d-lg-none quieroUnirmeMovile" (click)="login.goLogin()"
+        *ngIf="!login.isActive()">
+        <p><i class="icon-Login iconSize"></i>&nbsp;&nbsp;&nbsp;Quiero unirme</p>
+    </div>
+</div>
